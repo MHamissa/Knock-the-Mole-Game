@@ -1,0 +1,40 @@
+
+body{
+    background-color: #dbca0d;
+    font-family: cursive;
+}
+.mainContainer{
+    margin:30px;
+    display:grid;
+    gap:10px;
+    grid-template-areas:
+    " a b d"
+    " e f g";
+   
+}
+.hole{
+   
+  
+   width:150px;
+   height:202px;
+}
+#item1{grid-area:a;}
+#item2{grid-area:b;}
+#item3{grid-area:d;}
+#item4{grid-area:e;}
+#item5{grid-area:f;}
+#item6{grid-area:g;}
+#score{
+   font-size: 30pt;
+   font-weight: bold;
+}
+.hidden{
+ visibility: hidden;
+ transform: translateY(-10px);
+}
+.mole{
+   visibility: hidden;
+   margin-bottom: 0;
+   transition: cubic-bezier(.2,.53,.9,.68);
+   transition-duration: 0.5s;
+}
